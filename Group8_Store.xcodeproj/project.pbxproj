@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161FFC3029848AF8006448FD /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FFC2F29848AF8006448FD /* Customer.swift */; };
+		161FFC3229848B3A006448FD /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FFC3129848B3A006448FD /* Items.swift */; };
+		161FFC3629848BB5006448FD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FFC3529848BB5006448FD /* Store.swift */; };
 		831B9DA62983805C00C0F30D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831B9DA52983805C00C0F30D /* main.swift */; };
 		83DD90F429848A68003B39E2 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD90F329848A68003B39E2 /* test.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +27,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		161FFC2F29848AF8006448FD /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = SOURCE_ROOT; };
+		161FFC3129848B3A006448FD /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = SOURCE_ROOT; };
+		161FFC3529848BB5006448FD /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		831B9DA22983805C00C0F30D /* Group8_Store */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group8_Store; sourceTree = BUILT_PRODUCTS_DIR; };
 		831B9DA52983805C00C0F30D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		83DD90F329848A68003B39E2 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = SOURCE_ROOT; };
@@ -59,8 +65,11 @@
 		831B9DA42983805C00C0F30D /* Group8_Store */ = {
 			isa = PBXGroup;
 			children = (
+				161FFC3129848B3A006448FD /* Items.swift */,
+				161FFC2F29848AF8006448FD /* Customer.swift */,
 				83DD90F329848A68003B39E2 /* test.swift */,
 				831B9DA52983805C00C0F30D /* main.swift */,
+				161FFC3529848BB5006448FD /* Store.swift */,
 			);
 			path = Group8_Store;
 			sourceTree = "<group>";
@@ -123,6 +132,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161FFC3629848BB5006448FD /* Store.swift in Sources */,
+				161FFC3229848B3A006448FD /* Items.swift in Sources */,
+				161FFC3029848AF8006448FD /* Customer.swift in Sources */,
 				831B9DA62983805C00C0F30D /* main.swift in Sources */,
 				83DD90F429848A68003B39E2 /* test.swift in Sources */,
 			);
@@ -248,7 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PY37RTU33V;
+				DEVELOPMENT_TEAM = F6KSX6LGXG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

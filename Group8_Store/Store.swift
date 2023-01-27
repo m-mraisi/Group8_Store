@@ -6,8 +6,6 @@
 //
 
 import Foundation
-
-
 class Store {
     var items:[Item] = []
     
@@ -28,3 +26,4 @@ class Store {
         
     }
 }
+
