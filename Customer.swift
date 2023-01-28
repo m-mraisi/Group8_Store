@@ -4,18 +4,23 @@
 
 import Foundation
 class Customer {
-    var balance: Double = 0.0
+    var balance: Double = 10.0
     var itemsList: [OwnedItem] = []
     
-    func reloadAmount( _amt: Double) {
-        self.balance = self.balance + _amt
+    init(balance: Double, itemsList: [OwnedItem]) {
+        self.balance = balance
+        self.itemsList = itemsList
     }
     
-    func useItem (_id:String, _minutes:Int) {
+    func reloadAmount( _ amount: Double) {
+        self.balance = self.balance + amount
+    }
+    
+    func useItem (_ id:String, _ minutes:Int) {
         //find id where it matches
         for item in self.itemsList {
-            if(item.id == _id) {
-                item.minutesUsed = item.minutesUsed + _minutes
+            if(item.id == id) {
+                item.minutesUsed = item.minutesUsed + minutes
             }
         }
     }
