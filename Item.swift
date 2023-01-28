@@ -1,7 +1,9 @@
 //
-//  Items.swift
+//  Item.swift
 //  Group8_Store
 //
+//
+
 
 import Foundation
 class Item {
