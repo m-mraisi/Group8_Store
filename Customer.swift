@@ -1,9 +1,6 @@
 //
 //  Customer.swift
 //  Group8_Store
-//
-//  Created by jacob on 2023-01-27.
-//
 
 import Foundation
 class Customer {
@@ -23,6 +20,4 @@ class Customer {
         }
     }
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
+

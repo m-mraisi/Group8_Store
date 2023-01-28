@@ -9,3 +9,7 @@ import Foundation
 
 print("Hello, World!")
 
+var customer = Customer()
+
+
+print(customer.balance)

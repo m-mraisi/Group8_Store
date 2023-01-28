@@ -18,6 +18,9 @@ class Movie:Item {
 class Game:Item {
     var isMultiplayer:Bool = false
 }
+
+
+
 class OwnedItem:Item {
     var minutesUsed:Int = 0
     
