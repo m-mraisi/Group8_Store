@@ -7,11 +7,16 @@
 
 import Foundation
 class Item {
-    var id:String = ""
+    var id:Int = 0
     var title: String = ""
     var price: Double = 0.0
     var info:String {
         return " Title: \(title), Price: $\(price)"
+    }
+    init(id: Int, title: String, price: Double) {
+        self.id = id
+        self.title = title
+        self.price = price
     }
     
     func printReceipt(isRefund: Bool, amount:Double){
@@ -44,6 +49,10 @@ class Movie:Item {
             RunningTime: \(runningTime)
             """
     }
+    init(id: Int, title: String, price: Double,runningTime: Int) {
+        super.init(id: id, title: title, price: price)
+        self.runningTime = runningTime
+    }
 }
 
 class Game:Item {
@@ -56,9 +65,12 @@ class Game:Item {
             IsMultiplayer: \(isMultiplayer)
             """
     }
-    init(isMultiplayer: Bool, publisher: String) {
+    
+    init(id: Int, title: String, price: Double,isMultiplayer: Bool, publisher: String) {
         self.isMultiplayer = isMultiplayer
         self.publisher = publisher
+        super.init(id: id, title: title, price: price)
+
     }
 }
 
@@ -66,7 +78,8 @@ class Game:Item {
 class OwnedItem:Item {
     var minutesUsed:Int = 0
     
-    init(minutesUsed: Int) {
+    init(id: Int, title: String, price: Double,minutesUsed: Int) {
+        super.init(id: id, title: title, price: price)
         self.minutesUsed = minutesUsed
     }
 }

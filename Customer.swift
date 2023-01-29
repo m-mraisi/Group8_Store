@@ -14,13 +14,18 @@ class Customer {
     
     func reloadAmount( _ amount: Double) {
         self.balance = self.balance + amount
+        print("Successfully reloaded gift card!")
+        print("Current Balance: $\(self.balance)")
     }
     
-    func useItem (_ id:String, _ minutes:Int) {
+    func useItem (_ id:Int, _ minutes:Int) {
         //find id where it matches
         for item in self.itemsList {
             if(item.id == id) {
                 item.minutesUsed = item.minutesUsed + minutes
+                print("Used item: \(item.title)")
+                print("Minutes: \(minutes)")
+                print("Total Minutes used: \(item.minutesUsed)")
             }
         }
     }
