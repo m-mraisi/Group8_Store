@@ -6,6 +6,11 @@
 
 
 import Foundation
+
+protocol isPurchaseable {
+    var info :String {get}
+    func printReceipt(isRefund: Bool, amount:Double)
+}
 class Item {
     var id:Int = 0
     var title: String = ""
