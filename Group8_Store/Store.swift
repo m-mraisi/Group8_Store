@@ -11,18 +11,6 @@ class Store {
         self.items = items
     }
     
-    func findByTitle(_ keyword:String) -> [Item]?{
-        //if found return the item else return nil
-        var searchedItems:[Item] = []
-        
-        for item in items {
-            if((item.title).contains(keyword)){
-                searchedItems.append(item)
-            }
-            return searchedItems
-        }
-        return nil
-    }
     
     
     func buy(_ customer:Customer, _ itemId: Int) {
@@ -77,7 +65,7 @@ class Store {
         func findByTitle(_ keyword:String){
             for item in items{
                 if(item.title.lowercased().contains(keyword.lowercased())){
-                    print("" + item.info)
+                    print("Item: \n" + item.info)
                 }
                 else{
                     print("Sorry, no matching games found")

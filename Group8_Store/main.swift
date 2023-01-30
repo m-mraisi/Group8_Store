@@ -1,14 +1,5 @@
 import Foundation
 
-func searchItems(_ searchArray:[Item]) {
-    if(searchArray.isEmpty){
-        print("No items found with keyword: \(keyword)")
-    }else {
-        for item in searchArray{
-            print("Item found: \(item.title)")
-        }
-    }
-}
 //1. Creating a customer
 var customer = Customer(balance: 10.0, itemsList: [])
 //2. Creating a variety of movies and games
@@ -24,15 +15,14 @@ var store = Store(items: [game1,game2,movie1,movie2])
 
 //4. Searching for an item that exists
 var keyword = "Call of Duty"
-var searchedItems:[Item] = store.findByTitle(keyword)!
 print("4. Searching for an item that exists")
-searchItems(searchedItems)
+store.findByTitle(keyword)
 
 //5. Searching for an item that does not exist
-keyword = "Hello World"
-searchedItems = store.findByTitle(keyword)!
 print("5. Searching for an item that does not exist")
-searchItems(searchedItems)
+keyword = "Hello World"
+store.findByTitle(keyword)
+
 
 //6. Trying to purchase an item the customer cannot afford
 print("6. Trying to purchase an item the customer cannot afford")
