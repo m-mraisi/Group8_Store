@@ -4,8 +4,13 @@
 
 import Foundation
 class Customer {
-    var balance: Double = 10.0
-    var itemsList: [OwnedItem] = []
+    var balance: Double
+    var itemsList: [OwnedItem]
+    
+    init(){
+        self.balance = 10.0
+        self.itemsList = []
+    }
     
     init(balance: Double, itemsList: [OwnedItem]) {
         self.balance = balance

@@ -6,12 +6,15 @@
 
 import Foundation
 class Store {
-    var items:[Item] = []
+    var items:[Item]
+    
+    init(){
+        self.items = []
+    }
+    
     init(items: [Item]) {
         self.items = items
     }
-    
-    
     
     func buy(_ customer:Customer, _ itemId: Int) {
         var hasEnoughMoney = false
@@ -66,11 +69,11 @@ class Store {
             for item in items{
                 if(item.title.lowercased().contains(keyword.lowercased())){
                     print("Item: \n" + item.info)
-                }
-                else{
-                    print("Sorry, no matching games found")
+                    return
                 }
             }
+            print("Sorry, no matching games found")
+            return
         }
     }
     

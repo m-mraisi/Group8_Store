@@ -12,12 +12,18 @@ protocol isPurchaseable {
     func printReceipt(isRefund: Bool, amount:Double)
 }
 class Item:isPurchaseable {
-    var id:Int = 0
-    var title: String = ""
-    var price: Double = 0.0
+    var id:Int
+    var title: String
+    var price: Double
     var info:String {
         return " Title: \(title), Price: $\(price)"
     }
+    init(){
+        self.id = 0
+        self.title = "UNKNOWN"
+        self.price = 0.0
+    }
+    
     init(id: Int, title: String, price: Double) {
         self.id = id
         self.title = title
